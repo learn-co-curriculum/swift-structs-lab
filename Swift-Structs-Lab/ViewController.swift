@@ -12,12 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        var shoes = Footwear(shoeType: "espidrills", color: UIColor.purpleColor(), price: 100, salePrice:100)
+        
+        print(shoes)
+        
+        shoes.shoeType = "pumps"
+        shoes.salePrice = shoes.price * 0.50
+    
+        
+        
     }
 }
 
